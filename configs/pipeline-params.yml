@@ -1,0 +1,22 @@
+foundation:
+  name: 
+  docker_registry: 
+  system_domain: 
+  apps_domain: 
+
+pipelines:
+  email-from: 
+  email-to: 
+  metrics_collector:
+    git: https://github.com/theautoroboto/pcf-sre.git
+    username:
+    password:
+
+secrets:
+  docker:
+    username:
+    password:
+  concourse:
+    git:
+      username: 
+      password: 
