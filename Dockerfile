@@ -42,6 +42,6 @@ chmod +x /usr/local/bin/cf-mgmt && \
 wget --no-check-certificate -O /usr/local/bin/cf-mgmt-config $(curl -s https://api.github.com/repos/pivotalservices/cf-mgmt/releases/latest | grep browser_download_url | grep mgmt-config-linux | cut -d '"' -f 4) && \
 chmod +x /usr/local/bin/cf-mgmt-config && \
 # install pks cli
-pivnet login --api-token RyYyf5v1LUyuvKZHqxNQ && pivnet download-product-files -p pivotal-container-service -r 1.6.1 -i 579531 -d /usr/local/bin/ && mv /usr/local/bin/pks-linux-amd64* /usr/local/bin/pks && chmod +x /usr/local/bin/pks && \
+pivnet login --api-token xxx && pivnet download-product-files -p pivotal-container-service -r 1.6.1 -i 579531 -d /usr/local/bin/ && mv /usr/local/bin/pks-linux-amd64* /usr/local/bin/pks && chmod +x /usr/local/bin/pks && \
 # install kubectl
 pivnet download-product-files -p pivotal-container-service -r 1.6.1 -i 527933 -d /usr/local/bin/ && mv /usr/local/bin/kubectl-linux-amd64* /usr/local/bin/kubectl && chmod +x /usr/local/bin/kubectl
